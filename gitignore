@@ -1,0 +1,11 @@
+# Python virtual environments and caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+ENV/
+
+# Project Alpha / Mnemo specific local data
+leaderboard.bin
