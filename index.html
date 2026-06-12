@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mnemo - Cyber Memory</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="game-container">
+        <div class="header">
+            <div>🚩 Stage: <span id="stage">1</span></div>
+            <div>❤️ Lives: <span id="lives">3</span></div>
+            <div>🏆 Score: <span id="score">0</span></div>
+        </div>
+
+        <hr>
+
+        <div class="display-area">
+            <div id="word-flash" class="word-hidden"></div>
+            
+            <div id="countdown" class="word-hidden" style="font-size: 3rem; font-weight: bold; color: #58a6ff;"></div>
+            
+            <div id="math-gate" class="word-hidden">
+                <p class="gate-title">🧠 MENTAL GATE</p>
+                <p style="font-size: 0.8rem; color: #8b949e; margin: 2px 0;">Solve to unlock recall mode</p>
+                <h2 id="math-question"></h2>
+                <input type="number" id="math-answer" placeholder="Result..." autocomplete="off">
+            </div>
+
+            <div id="status-msg">Welcome to Mnemo Engine</div>
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="player-name" placeholder="Enter Hero Name..." autocomplete="off">
+            <input type="text" id="user-input" placeholder="Type sequence here (space separated)..." autocomplete="off" disabled class="word-hidden">
+            <button id="action-btn">Start Game</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='game.js') }}"></script>
+</body>
+</html>

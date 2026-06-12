@@ -1,0 +1,119 @@
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    background-color: #161b22;
+    border: 1px solid #30363d;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #58a6ff;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #30363d;
+    margin: 15px 0;
+}
+
+.display-area {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#word-flash {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #ff7b72;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.word-hidden {
+    display: none !important;
+}
+
+#status-msg {
+    color: #8b949e;
+    font-size: 1rem;
+}
+
+#math-gate {
+    width: 100%;
+}
+
+.gate-title {
+    color: #f0883e;
+    font-weight: bold;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+#math-question {
+    color: #ffd54f;
+    margin: 10px 0;
+    font-size: 1.8rem;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    background-color: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+    color: #c9d1d9;
+    padding: 12px;
+    font-size: 1rem;
+    text-align: center;
+    outline: none;
+}
+
+input:focus {
+    border-color: #58a6ff;
+}
+
+#math-answer {
+    width: 60%;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+button {
+    background-color: #238636;
+    border: 1px solid rgba(240,246,252,0.1);
+    border-radius: 6px;
+    color: #ffffff;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2ea44f;
+}
